@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shear Nesting</title><style>/*CSS*/</style></head><body>
+<header><h1>Shear Nesting</h1><p>Guillotine cut nesting for sheet RM pieces</p></header>
+<main>
+<div class="card"><h2>Settings</h2><div class="opts">
+<label>Unit<select id="unit"><option value="in">inch</option><option value="mm">mm</option></select></label>
+<label>Gap between parts<input id="gap" type="number" step="any" value="0" inputmode="decimal"></label>
+<label>Min reusable side<input id="minr" type="number" step="any" value="1" inputmode="decimal"></label>
+<label>Thickness<input id="thk" type="number" step="any" value="0.09" inputmode="decimal"></label>
+<label>Density g/cm3<input id="den" type="number" step="any" value="2.81" inputmode="decimal"></label>
+<label>Rotation<select id="rot"><option value="1">Allowed</option><option value="0">Not allowed</option></select></label>
+</div></div>
+<div class="card"><h2>Raw material pieces</h2><div class="lab"><span>Name</span><span>Width</span><span>Height</span><span>Qty</span><span></span></div><div id="rms"></div><button class="b" id="addrm">+ Add RM</button></div>
+<div class="card"><h2>Parts to nest</h2><div class="lab"><span>Name</span><span>Width</span><span>Height</span><span>Qty</span><span></span></div><div id="parts"></div><button class="b" id="addpart">+ Add part</button></div>
+<div class="bar"><button class="b p" id="run">Nest</button><button class="b" id="ex">Load example</button><button class="b" id="pdf">Save PDF</button></div>
+<div id="out" style="margin-top:12px"></div>
+</main><script>/*JSPDF*/</script><script>/*NEST*/</script><script>/*APP*/</script></body></html>
